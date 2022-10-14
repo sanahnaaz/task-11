@@ -54,7 +54,7 @@ function Header() {
                 <MenuIcon>
                   <MenuImage src={require("../../assets/images/ant-design_gift-outlined.svg").default} />
                 </MenuIcon>
-                <MenuH5>Guest Traffic</MenuH5>
+                <MenuH5>Gifts</MenuH5>
               </MenuLi>
             </MenuUl>
             <SetMenu>Settings</SetMenu>
@@ -92,7 +92,8 @@ const HeaderTop = styled.header`
   width: 95%;
   margin: 0 auto;
   align-items: center;
-  padding-top: 70px;
+  padding-top: 0px;
+  margin-top: 70px;
 `;
 const LogoContainer = styled.h1`
   margin: 0;
@@ -111,34 +112,36 @@ const HeadLi = styled.li`
     margin-right: 30px;
 `;
 const HeadA = styled.a`
-    font-size: 20px;
+    font-size: 17px;
     font-weight: normal;
     color: #8D8989;
     &:hover{
       color: #000;
-      font-weight: normal;
-      border-bottom: 3px solid #000;
+      border-bottom: 2px solid #000;
     }
 `;
 const IconUl = styled.ul`
-  display: flex;
   justify-content: space-between;
+  display: flex;
+  
   list-style: none;
 `;
 const IconLi = styled.li`
   width: 40px;
-
+  margin-left: 10px;
+  
 `;
 const IconImage = styled.img`
   display: block;
   width: 100%;
+  border-radius: 50%;
 `;
 const SideContainer = styled.section`
   width: 20%;
   padding-left: 20px;
 `;
 const SideBar = styled.section`
-  margin-top: 30px;
+  margin-top: 50px;
 `;
 const MainMenu = styled.h4`
   color: #8D8989;
@@ -149,11 +152,11 @@ const MenuUl = styled.ul`
   padding-left: 10px;
 `;
 const MenuLi = styled.li`
-margin-bottom: 20px;
-font-size: 15px;
+  margin-bottom: 20px;
+  font-size: 15px;
   display: flex;
   align-items: center;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 `;
 const MenuIcon = styled.span`
   margin-right: 8px;
@@ -167,7 +170,8 @@ const MenuH5 = styled.h5`
 const SetMenu = styled.h4`
   color: #8D8989;
   font-size: 15px;
-  margin-bottom: 20px;
+  margin: 50px 0px 20px;
+
 `;
 const SetUl = styled.ul`
   padding-left: 10px;
@@ -175,7 +179,7 @@ const SetUl = styled.ul`
 const SetLi = styled.li`
   display: flex;
   align-items: center;
-  margin-bottom: 13px;
+  margin-bottom: 18px;
 `;
 const SetIcon = styled.span`
   margin-right: 8px;
