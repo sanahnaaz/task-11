@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Profile from './Profile'
+import Traffic from './Traffic';
 
 function Spotlight() {
     return (
@@ -62,7 +63,11 @@ function Spotlight() {
                         <SeeH6>See more</SeeH6>
                     </SeeLeft>
                 </Seemore>
-                <Profile />
+
+                <BottomContainer>
+                    <Profile />
+                    <Traffic />
+                </BottomContainer>
             </SpotContainer>
         </>
     )
@@ -70,6 +75,10 @@ function Spotlight() {
 
 export default Spotlight;
 
+const BottomContainer = styled.section`
+    display: flex;
+    justify-content: space-between;
+`;
 const SpotContainer = styled.section`
     background: #f5f1f1;
     width: 80%;

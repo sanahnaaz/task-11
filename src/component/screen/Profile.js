@@ -88,7 +88,8 @@ const ProfileList = styled.section`
 
 `;
 const ProDivOne = styled.div`
-    padding: 20px;display: flex;
+    padding: 20px;
+    display: flex;
     justify-content: space-between;
     background-color: #fff;
     display: flex;
@@ -242,4 +243,3 @@ const ProThreeEditIcon = styled.img`
     display: block;
     width: 100%;
 `;
-
