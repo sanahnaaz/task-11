@@ -51,7 +51,6 @@ const TrafficContainer = styled.section`
 const TrafficTop = styled.section`
     display: flex;
     justify-content: space-between;
-    
 `;
 const TrafficUl = styled.ul`
     display: flex;

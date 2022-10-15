@@ -9,8 +9,7 @@ function Main() {
       <Container>
           <Header />
           <Spotlight />
-      </Container>
-        
+      </Container>  
     </>
   )
 }

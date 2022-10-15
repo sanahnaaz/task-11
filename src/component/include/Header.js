@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import {Link} from "react-router-dom";
 
 function Header() {
   return (
@@ -10,13 +11,13 @@ function Header() {
           </LogoContainer>
           <HeadUl>
             <HeadLi>
-              <HeadA href=""> Overview</HeadA>
+              <HeadA > Overview</HeadA>
             </HeadLi>
             <HeadLi>
-              <HeadA href="">Guest List</HeadA>
+              <HeadA to="/guest-list">Guest List</HeadA>
             </HeadLi>
             <HeadLi>
-              <HeadA href="">Temporery Traffic</HeadA>
+              <HeadA to="/graph">Temporery Traffic</HeadA>
             </HeadLi>
           </HeadUl>
           <IconUl>
@@ -36,13 +37,13 @@ function Header() {
                 <MenuIcon>
                   <MenuImage src={require("../../assets/images/akar-icons_dashboard.svg").default} />
                 </MenuIcon>
-                <MenuH5>Dashboard</MenuH5>
+                <MenuH5 to="/">Dashboard</MenuH5>
               </MenuLi>
               <MenuLi>
                 <MenuIcon>
                   <MenuImage src={require("../../assets/images/fluent_food-cake-20-regular.svg").default} />
                 </MenuIcon>
-                <MenuH5>Catering Status</MenuH5>
+                <MenuH5 to="/category">Catering Status</MenuH5>
               </MenuLi>
               <MenuLi>
                 <MenuIcon>
@@ -55,6 +56,7 @@ function Header() {
                   <MenuImage src={require("../../assets/images/ant-design_gift-outlined.svg").default} />
                 </MenuIcon>
                 <MenuH5>Gifts</MenuH5>
+                <MenuSpan>22</MenuSpan>
               </MenuLi>
             </MenuUl>
             <SetMenu>Settings</SetMenu>
@@ -63,7 +65,7 @@ function Header() {
                 <SetIcon>
                   <SetImage src={require("../../assets/images/healthicons_ui-user-profile-outline.svg").default} />
                 </SetIcon>
-                <SetH5>Account</SetH5>
+                  <SetH5>Account</SetH5>
               </SetLi>
               <SetLi>
                 <SetIcon>
@@ -111,7 +113,7 @@ const HeadUl = styled.ul`
 const HeadLi = styled.li`
     margin-right: 30px;
 `;
-const HeadA = styled.a`
+const HeadA = styled(Link)`
     font-size: 17px;
     font-weight: normal;
     color: #8D8989;
@@ -126,7 +128,7 @@ const IconUl = styled.ul`
   
   list-style: none;
 `;
-const IconLi = styled.li`
+const IconLi= styled(Link)`
   width: 40px;
   margin-left: 10px;
   
@@ -156,7 +158,8 @@ const MenuLi = styled.li`
   font-size: 15px;
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
+  
 `;
 const MenuIcon = styled.span`
   margin-right: 8px;
@@ -164,8 +167,21 @@ const MenuIcon = styled.span`
 const MenuImage = styled.img`
 
 `;
-const MenuH5 = styled.h5`
+const MenuH5 = styled(Link)`
   margin: 0;
+  &:hover{
+      color: #000;
+      font-weight: bold;
+    }
+`;
+const MenuSpan = styled.span`
+    background-color: #A5E3E3;
+    border-radius: 10px;
+    padding: 3px;
+    display: inline-block;
+	  margin-left: 5px;
+    font-size: 10px;
+    color: #fff;
 `;
 const SetMenu = styled.h4`
   color: #8D8989;
@@ -189,4 +205,8 @@ const SetImage = styled.img`
 `;
 const SetH5 = styled.h5`
   margin: 0;
+  &:hover{
+      color: #000;
+      font-weight: bold;
+    }
 `;

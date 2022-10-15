@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Profile from './Profile'
-import Traffic from './Traffic';
+import Grapht from './Grapht';
 
 function Spotlight() {
     return (
@@ -66,7 +66,7 @@ function Spotlight() {
 
                 <BottomContainer>
                     <Profile />
-                    <Traffic />
+                    <Grapht />
                 </BottomContainer>
             </SpotContainer>
         </>

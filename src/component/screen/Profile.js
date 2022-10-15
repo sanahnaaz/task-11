@@ -88,7 +88,7 @@ const ProfileList = styled.section`
 
 `;
 const ProDivOne = styled.div`
-    padding: 20px;
+    padding: 25px;
     display: flex;
     justify-content: space-between;
     background-color: #fff;
@@ -96,6 +96,9 @@ const ProDivOne = styled.div`
     justify-content: space-between;
     border-radius: 20px;
     margin: 20px 0px;
+    :hover{
+        box-shadow: 3px 5px 20px 10px #d1d1d1;
+    }
 `;
 const ProLeft = styled.div`
     display: flex;
@@ -142,13 +145,17 @@ const ProEditIcon = styled.img`
     width: 100%;
 `;
 const ProDivTwo = styled.div`
-    padding: 20px;display: flex;
+    padding: 25px;
+    display: flex;
     justify-content: space-between;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
     border-radius: 20px;
     margin: 20px 0px;
+    :hover{
+        box-shadow: 3px 5px 20px 10px #d1d1d1;
+    }
 `;
 const ProTwoLeft = styled.div`
     display: flex;
@@ -193,13 +200,17 @@ const ProTwoEditIcon = styled.img`
     width: 100%;
 `;
 const ProDivThree = styled.div`
-    padding: 20px;display: flex;
+    padding: 25px;
+    display: flex;
     justify-content: space-between;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
     border-radius: 20px;
     margin: 20px 0px;
+    :hover{
+        box-shadow: 3px 5px 20px 10px #d1d1d1;
+    }
 `;
 const ProThreeLeft = styled.div`
     display: flex;
