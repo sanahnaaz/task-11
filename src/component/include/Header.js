@@ -14,10 +14,10 @@ function Header() {
               <HeadA > Overview</HeadA>
             </HeadLi>
             <HeadLi>
-              <HeadA to="/guest-list">Guest List</HeadA>
+              <HeadA to="/profile">Guest List</HeadA>
             </HeadLi>
             <HeadLi>
-              <HeadA to="/graph">Temporery Traffic</HeadA>
+              <HeadA to="/guestTaffic">Temporery Traffic</HeadA>
             </HeadLi>
           </HeadUl>
           <IconUl>
@@ -43,19 +43,19 @@ function Header() {
                 <MenuIcon>
                   <MenuImage src={require("../../assets/images/fluent_food-cake-20-regular.svg").default} />
                 </MenuIcon>
-                <MenuH5 to="/category">Catering Status</MenuH5>
+                <MenuH5 to="/catering">Catering Status</MenuH5>
               </MenuLi>
               <MenuLi>
                 <MenuIcon>
                   <MenuImage src={require("../../assets/images/bx_bar-chart-square.svg").default} />
                 </MenuIcon>
-                <MenuH5>Guest Traffic</MenuH5>
+                <MenuH5 to="/guestTaffic">Guest Traffic</MenuH5>
               </MenuLi>
               <MenuLi>
                 <MenuIcon>
                   <MenuImage src={require("../../assets/images/ant-design_gift-outlined.svg").default} />
                 </MenuIcon>
-                <MenuH5>Gifts</MenuH5>
+                <MenuH5 to="/gifts">Gifts</MenuH5>
                 <MenuSpan>22</MenuSpan>
               </MenuLi>
             </MenuUl>
@@ -65,19 +65,19 @@ function Header() {
                 <SetIcon>
                   <SetImage src={require("../../assets/images/healthicons_ui-user-profile-outline.svg").default} />
                 </SetIcon>
-                  <SetH5>Account</SetH5>
+                  <SetH5 to="/account">Account</SetH5>
               </SetLi>
               <SetLi>
                 <SetIcon>
                   <SetImage src={require("../../assets/images/clarity_wallet-line.svg").default} />
                 </SetIcon>
-                <SetH5>Wallet</SetH5>
+                <SetH5 to="/wallet">Wallet</SetH5>
               </SetLi>
               <SetLi>
                 <SetIcon>
                   <SetImage src={require("../../assets/images/fluent_chat-help-20-regular.svg").default} />
                 </SetIcon>
-                <SetH5>Help & Support</SetH5>
+                <SetH5 to="/help">Help & Support</SetH5>
               </SetLi>
             </SetUl>
         </SideBar>  
@@ -121,6 +121,9 @@ const HeadA = styled(Link)`
       color: #000;
       border-bottom: 2px solid #000;
     }
+    @media all and (max-width: 980px){
+      font-size: 15px;
+  }
 `;
 const IconUl = styled.ul`
   justify-content: space-between;
@@ -149,6 +152,7 @@ const MainMenu = styled.h4`
   color: #8D8989;
   margin-bottom: 20px;
   font-size: 15px;
+  
 `;
 const MenuUl = styled.ul`
   padding-left: 10px;
@@ -159,6 +163,9 @@ const MenuLi = styled.li`
   display: flex;
   align-items: center;
   margin-bottom: 18px;
+  @media all and (max-width: 980px){
+    font-size: 12px;
+  }
   
 `;
 const MenuIcon = styled.span`
@@ -196,6 +203,9 @@ const SetLi = styled.li`
   display: flex;
   align-items: center;
   margin-bottom: 18px;
+  @media all and (max-width: 1280px){
+    font-size: 12px;
+  }
 `;
 const SetIcon = styled.span`
   margin-right: 8px;
@@ -203,7 +213,7 @@ const SetIcon = styled.span`
 const SetImage = styled.img`
 
 `;
-const SetH5 = styled.h5`
+const SetH5 = styled(Link)`
   margin: 0;
   &:hover{
       color: #000;

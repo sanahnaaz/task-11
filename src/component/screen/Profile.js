@@ -83,6 +83,12 @@ export default Profile
 
 const ProfileContainer = styled.section`
     width: 39%;
+    @media all and (max-width: 980px){
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+
 `;
 const ProfileList = styled.section`
 
@@ -96,6 +102,7 @@ const ProDivOne = styled.div`
     justify-content: space-between;
     border-radius: 20px;
     margin: 20px 0px;
+    
     :hover{
         box-shadow: 3px 5px 20px 10px #d1d1d1;
     }

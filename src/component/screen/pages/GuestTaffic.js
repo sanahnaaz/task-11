@@ -6,16 +6,16 @@ import styled from 'styled-components'
 function GuestTaffic() {
   return (
     <>
-      
+      <Container>
           <Header />
-          <PageGraph>
           <Grapht />
-           </PageGraph>
+      </Container>  
     </>
   )
 }
 
-export default GuestTaffic
-
-const PageGraph = styled.section`
+export default GuestTaffic;
+const Container = styled.section`
+    display: flex;
+    flex-wrap: wrap;
 `;

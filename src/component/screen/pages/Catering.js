@@ -1,9 +1,20 @@
 import React from 'react'
+import Header from '../../include/Header';
+import styled from 'styled-components';
 
 function Catering() {
   return (
-    <div>Catering Error</div>
-  )
+    <>
+    <Container>
+        <Header />
+        <h2>Catering not available</h2>
+    </Container>  
+  </>
+)
 }
 
-export default Catering
+export default Catering;
+const Container = styled.section`
+  display: flex;
+  flex-wrap: wrap;
+`;

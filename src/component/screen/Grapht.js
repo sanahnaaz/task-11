@@ -92,6 +92,7 @@ export default function Grapht() {
               right: 10,
               left: 20,
               bottom: 3
+              
           }}
           >
           {/* <CartesianGrid strokeDasharray="3 3" /> */}
@@ -115,10 +116,21 @@ const GraphContainer = styled.section`
     background-color: #fff;
     border-radius: 20px;
     margin: 20px 0px;
+    @media all and (max-width: 1280px){
+      width: 80%;
+      background-color: #f5f1f1;
+      border-radius: 0px;
+  }
+  @media all and (max-width: 980px){
+    flex-wrap: wrap;
+    width: 100%;
+  }
 `;
 const BarChartBox = styled.section`
     width: 100%;
     margin: 0 auto;
+    
+    
 `;
 
 const GraphHead = styled.section`
@@ -151,7 +163,6 @@ const Gh4 = styled.h4`
     margin-right: 15px;
     color: #000;
 `;
-
 const Mbox = styled.span`
     background-color: #A5E3E3;
     border-radius: 5px;

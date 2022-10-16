@@ -78,6 +78,10 @@ export default Spotlight;
 const BottomContainer = styled.section`
     display: flex;
     justify-content: space-between;
+    @media all and (max-width: 980px){
+        flex-wrap: wrap;
+    }
+    
 `;
 const SpotContainer = styled.section`
     background: #f5f1f1;
@@ -94,6 +98,12 @@ const DivOne = styled.div`
     width: 39%;
     padding: 40px;
     border-radius: 18px;
+    @media all and (max-width: 980px){
+        padding: 30px;
+    }
+    @media all and (max-width: 768px){
+        padding: 15px;
+    }
 `;
 const MIcon = styled.div`
     display: flex;
@@ -133,16 +143,31 @@ const MH1 = styled.h1`
     font-size: 45px;
     font-weight: bold;
     color: #000;
+    @media all and (max-width: 1280px){
+        font-size: 35px;
+    }
+    @media all and (max-width: 980px){
+        font-size: 25px;
+    }
+    @media all and (max-width: 768px){
+        font-size: 20px;
+    }
 `;
 const HR = styled.hr`
     border-right: 1px solid #000;
 `;
 const MRight = styled.div``;
 const DivTwo = styled.div`
-   background-color: #D2A2F7;
+    background-color: #D2A2F7;
     width: 39%;
     padding: 40px;
     border-radius: 18px;
+    @media all and (max-width: 980px){
+        padding: 30px;
+    }
+    @media all and (max-width: 768px){
+        padding: 15px;
+    }
 `;
 const FIcon = styled.div`
      display: flex;
@@ -182,6 +207,15 @@ const FH1 = styled.h1`
     font-size: 45px;
     font-weight: bold;
     color: #000;
+    @media all and (max-width: 1280px){
+        font-size: 35px;
+    }
+    @media all and (max-width: 980px){
+        font-size: 25px;
+    }
+    @media all and (max-width: 768px){
+        font-size: 20px;
+    }
 `;
 const FRight = styled.div``;
 const DivThree = styled.div`
@@ -225,7 +259,7 @@ const SeeH6 = styled.h6`
     font-weight: 700;
 `;
 const SeeLeft = styled.div`
-     display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     width: 55%;
