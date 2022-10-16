@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 function Header() {
   return (
     <>
-      <HeaderTop>
+        <HeaderTop>
           <LogoContainer>
               <LogoImage src={require("../../assets/images/logo.svg").default} />
           </LogoContainer>
@@ -28,6 +28,9 @@ function Header() {
               <IconImage src={require("../../assets/images/rectangle.jpg")} />
             </IconLi>
           </IconUl>
+          <IconBurger>
+            <BurgerImg src={require("../../assets/images/icons-menu.png")} />
+          </IconBurger>
       </HeaderTop>
       <SideContainer>
         <SideBar>
@@ -88,6 +91,15 @@ function Header() {
 
 export default Header;
 
+const IconBurger = styled.span`
+  display: none;
+  @media all and (max-width: 640px){
+    display: block;
+  }
+
+`;
+const BurgerImg = styled.img``;
+
 const HeaderTop = styled.header`
   display: flex;
   justify-content: space-between;
@@ -100,9 +112,15 @@ const HeaderTop = styled.header`
 const LogoContainer = styled.h1`
   margin: 0;
   display: contents;
+  
 `;
 const LogoImage = styled.img`
-
+@media all and (max-width: 768px){
+    width: 30%;
+}
+  @media all and (max-width: 480px){
+    width: 40%;
+}
 `;
 const HeadUl = styled.ul`
   list-style: none;
@@ -114,6 +132,10 @@ const HeadLi = styled.li`
     margin-right: 30px;
 @media all and (max-width: 768px){
   margin-left: 10px;
+
+}
+@media all and (max-width: 640px){
+  display: none;
 
 }
   
@@ -148,10 +170,17 @@ const IconImage = styled.img`
   display: block;
   width: 100%;
   border-radius: 50%;
+  @media all and (max-width: 640px){
+    display: none;
+  }
 `;
 const SideContainer = styled.section`
   width: 20%;
   padding-left: 20px;
+  @media all and (max-width: 768px){
+    display: none;
+  }
+
 `;
 const SideBar = styled.section`
   margin-top: 50px;

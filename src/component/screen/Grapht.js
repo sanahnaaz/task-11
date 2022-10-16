@@ -60,6 +60,37 @@ const data = [
 export default function Grapht() {
   return (
     <>
+    <TrafficContainer>
+      <TrafficTop>
+          <TrafficUl>
+              <TrafficLi>
+                  <TrafficDivBlack></TrafficDivBlack>
+                  <TrafficH3>Total guest</TrafficH3>
+              </TrafficLi>
+              <TrafficLi>
+                  <TrafficDivBlue></TrafficDivBlue>
+                  <TrafficH3>Male guest</TrafficH3>
+              </TrafficLi>
+              <TrafficLi>
+                  <TrafficDivVoilet></TrafficDivVoilet>
+                  <TrafficH3>Female guest</TrafficH3>
+              </TrafficLi>
+          </TrafficUl>
+          <TrafficIcon>
+              <TrafficImgDivOne>
+                  <TrafficImage src={require("../../assets/images/arrow-fill.svg").default} />
+              </TrafficImgDivOne>   
+              <TrafficImgDiv>
+                  <TrafficImage src={require("../../assets/images/arrow-fill-1.svg").default} />
+              </TrafficImgDiv>  
+          </TrafficIcon>
+      </TrafficTop>
+      <TrafficBottom>
+          <TrafficBottomDiv>
+              <TrafficBottomImage src={require("../../assets/images/group.svg").default} />
+          </TrafficBottomDiv>
+      </TrafficBottom>
+        </TrafficContainer>
 
     <GraphContainer>
         <BarChartBox>
@@ -110,6 +141,8 @@ export default function Grapht() {
   );
 }
 
+
+
 const GraphContainer = styled.section`
     width: 56%;
     padding: 20px 35px;
@@ -121,16 +154,24 @@ const GraphContainer = styled.section`
       background-color: #f5f1f1;
       border-radius: 0px;
   }
+  @media all and (max-width: 1080px){
+        flex-wrap: wrap;
+        width: 100%;
+    }
   @media all and (max-width: 980px){
     flex-wrap: wrap;
     width: 100%;
+  }
+  @media all and (max-width: 768px){
+    padding: 50px;
+  }
+  @media all and (max-width: 640px){
+      display: none;
   }
 `;
 const BarChartBox = styled.section`
     width: 100%;
     margin: 0 auto;
-    
-    
 `;
 
 const GraphHead = styled.section`
@@ -162,6 +203,10 @@ const Gh4 = styled.h4`
     font-weight: 600;
     margin-right: 15px;
     color: #000;
+    @media all and (max-width: 768px){
+      font-size: 10px;
+    }
+
 `;
 const Mbox = styled.span`
     background-color: #A5E3E3;
@@ -184,6 +229,85 @@ const Slide = styled.div`
   width: 20px;
 `;
 const Limg = styled.img`
+    display: block;
+    width: 100%;
+`;
+
+
+
+
+
+const TrafficContainer = styled.section`
+    width: 100%;
+    padding: 20px 35px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 20px 0px;
+    display: none;
+    @media all and (max-width: 640px){
+      display: block;
+    }
+
+`;
+const TrafficTop = styled.section`
+    display: flex;
+    justify-content: space-between;
+`;
+const TrafficUl = styled.ul`
+    display: flex;
+    justify-content: space-between;
+`;
+const TrafficLi = styled.li`
+    display: flex;
+    align-items: center;
+`;
+const TrafficDivBlack = styled.div`
+   background-color: #000;
+   padding: 5px;
+   height: 5px;
+   border-radius: 5px;
+   margin-right: 5px;
+
+`;
+const TrafficH3 = styled.h3`
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 15px;
+    color: #000;
+`;
+const TrafficDivBlue = styled.div`
+   background-color: #A5E3E3;
+   height: 5px;
+   padding: 5px;
+   border-radius: 5px;
+   margin-right: 5px;
+`;
+const TrafficDivVoilet = styled.div`
+    background-color: #D2A2F7;
+    padding: 5px;
+    height: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+`;
+const TrafficIcon = styled.div`
+    display: flex;
+    justify-content: space-between;
+`;
+const TrafficImgDivOne = styled.div`
+    width: 20px;
+`;
+const TrafficImage = styled.img`
+    display: block;
+    width: 100%;
+`;
+const TrafficImgDiv = styled.div`
+    width: 20px;
+`;
+const TrafficBottom = styled.section``;
+const TrafficBottomDiv = styled.div`
+    width: 80%;
+`;
+const TrafficBottomImage = styled.img`
     display: block;
     width: 100%;
 `;

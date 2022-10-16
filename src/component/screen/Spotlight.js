@@ -78,6 +78,9 @@ export default Spotlight;
 const BottomContainer = styled.section`
     display: flex;
     justify-content: space-between;
+    @media all and (max-width: 1080px){
+        flex-wrap: wrap;
+    }
     @media all and (max-width: 980px){
         flex-wrap: wrap;
     }
@@ -87,6 +90,13 @@ const SpotContainer = styled.section`
     background: #f5f1f1;
     width: 80%;
     padding: 25px;
+    
+    @media all and (max-width: 768px){
+    width: 100%;
+  }
+  @media all and (max-width: 640px){
+    width: 120%;
+  }
 `;
 const TopContainer = styled.section`
     display: flex;
@@ -114,8 +124,11 @@ const MIcon = styled.div`
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-    @media all and (max-width: 768px){
-        margin-left: 100px;
+@media all and (max-width: 768px){
+    margin-left: 180px;
+}
+@media all and (max-width: 480px){
+    margin-left: 60px;
 }
 `;
 const MSpan = styled.span`
@@ -136,14 +149,19 @@ const MH3 = styled.h3`
     font-weight: bold;
     margin-left: 10px;
     color: #000;
-
+ 
 `;
 const MCount = styled.section`
     display: flex;
     justify-content: space-between;
-    
+@media all and (max-width: 768px){
+    justify-content: space-around;
+}
+
 `;
-const MLeft = styled.div``;
+const MLeft = styled.div`
+
+`;
 const MH4 = styled.h4`
     font-size: 12px;
     margin-top: 10px;
@@ -188,7 +206,10 @@ const FIcon = styled.div`
     align-items: center;
     margin-bottom: 15px;
     @media all and (max-width: 768px){
-        margin-left: 100px;
+        margin-left: 180px;
+}
+@media all and (max-width: 480px){
+    margin-left: 60px;
 }
 `;
 const FSpan = styled.span`
@@ -212,6 +233,9 @@ const FH3 = styled.h3`
 const FCount = styled.section`
      display: flex;
     justify-content: space-between;
+    @media all and (max-width: 768px){
+    justify-content: space-around;
+}
 `;
 const FLeft = styled.div``;
 const FH4 = styled.h4`
@@ -266,30 +290,43 @@ const Seemore = styled.section`
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-    @media all and (max-width: 768px){
-     flex-wrap: wrap;
-    }
+@media all and (max-width: 480px){
+        flex-wrap: wrap;
+}
+
 `;
 const SeeRight = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 38%;
-    @media all and (max-width: 768px){
-        width: 50%;
-    }
+@media all and (max-width: 980px){
+   display: none;
+} 
+@media all and (max-width: 480px){
+    width: 50%;
+}
 
+  
 `;
 const SeeH5 = styled.h5`
     font-size: 18px;
     color: #000;
     font-weight: 500;
-    
+@media all and (max-width: 768px){
+    font-size: 15px;
+    }
+@media all and (max-width: 480px){
+    font-size: 13px;
+}
 `;
 const SeeH6 = styled.h6`
     font-size: 12px;
     color: grey;
     font-weight: 700;
+@media all and (max-width: 480px){
+    font-size: 10px;
+}
 `;
 const SeeLeft = styled.div`
     display: flex;
