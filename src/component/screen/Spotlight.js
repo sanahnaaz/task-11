@@ -91,8 +91,11 @@ const SpotContainer = styled.section`
 const TopContainer = styled.section`
     display: flex;
     justify-content: space-between;
-    
+@media all and (max-width: 768px){
+    flex-wrap: wrap;
+}
 `;
+
 const DivOne = styled.div`
     background-color: #A5E3E3;
     width: 39%;
@@ -103,12 +106,17 @@ const DivOne = styled.div`
     }
     @media all and (max-width: 768px){
         padding: 15px;
+        width: 100%;
+        margin: 10px 10px;
     }
 `;
 const MIcon = styled.div`
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    @media all and (max-width: 768px){
+        margin-left: 100px;
+}
 `;
 const MSpan = styled.span`
     border-radius: 50%;
@@ -121,12 +129,14 @@ const MSpan = styled.span`
 const SpanIconImage = styled.img`
     display: block;
     width: 100%;
+    
 `;
 const MH3 = styled.h3`
     font-size: 18px;
     font-weight: bold;
     margin-left: 10px;
     color: #000;
+
 `;
 const MCount = styled.section`
     display: flex;
@@ -151,6 +161,7 @@ const MH1 = styled.h1`
     }
     @media all and (max-width: 768px){
         font-size: 20px;
+        text-align: center;
     }
 `;
 const HR = styled.hr`
@@ -165,14 +176,20 @@ const DivTwo = styled.div`
     @media all and (max-width: 980px){
         padding: 30px;
     }
+    
     @media all and (max-width: 768px){
-        padding: 15px;
+        padding: 10px;
+        width: 100%;
+        margin: 10px 10px;
     }
 `;
 const FIcon = styled.div`
      display: flex;
     align-items: center;
     margin-bottom: 15px;
+    @media all and (max-width: 768px){
+        margin-left: 100px;
+}
 `;
 const FSpan = styled.span`
     border-radius: 50%;
@@ -215,6 +232,7 @@ const FH1 = styled.h1`
     }
     @media all and (max-width: 768px){
         font-size: 20px;
+        text-align: center;
     }
 `;
 const FRight = styled.div``;
@@ -222,6 +240,10 @@ const DivThree = styled.div`
     width: 14%;
     background-color: #fff;
     border-radius: 15px;
+    @media all and (max-width: 768px){
+        width: 100%;
+        margin: 10px 10px;
+    }
 `;
 const VisitH4 = styled.h4`
     font-size: 15px;
@@ -229,7 +251,12 @@ const VisitH4 = styled.h4`
     margin-top: 10px;
     text-align: center;
 `;
-const VisitDiv = styled.div``;
+const VisitDiv = styled.div`
+    @media all and (max-width: 768px){
+        width: 50%;
+        margin: 0 auto;
+}
+`;
 const VisitImage = styled.img`
     display: block;
     width: 100%;
@@ -239,12 +266,18 @@ const Seemore = styled.section`
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+    @media all and (max-width: 768px){
+     flex-wrap: wrap;
+    }
 `;
 const SeeRight = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 38%;
+    @media all and (max-width: 768px){
+        width: 50%;
+    }
 
 `;
 const SeeH5 = styled.h5`

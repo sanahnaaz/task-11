@@ -112,6 +112,11 @@ const HeadUl = styled.ul`
 `;
 const HeadLi = styled.li`
     margin-right: 30px;
+@media all and (max-width: 768px){
+  margin-left: 10px;
+
+}
+  
 `;
 const HeadA = styled(Link)`
     font-size: 17px;
@@ -121,8 +126,11 @@ const HeadA = styled(Link)`
       color: #000;
       border-bottom: 2px solid #000;
     }
-    @media all and (max-width: 980px){
+@media all and (max-width: 980px){
       font-size: 15px;
+  }
+  @media all and (max-width: 768px){
+        font-size: 13px;
   }
 `;
 const IconUl = styled.ul`
