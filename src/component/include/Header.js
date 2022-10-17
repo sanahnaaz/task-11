@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import {Link} from "react-router-dom";
+import Navbar from './Navbar';
 
 function Header() {
   return (
@@ -29,7 +30,8 @@ function Header() {
             </IconLi>
           </IconUl>
           <IconBurger>
-            <BurgerImg src={require("../../assets/images/icons-menu.png")} />
+            <Navbar />
+            {/* <BurgerImg src={require("../../assets/images/icons-menu.png")} /> */}
           </IconBurger>
       </HeaderTop>
       <SideContainer>
@@ -98,7 +100,7 @@ const IconBurger = styled.span`
   }
 
 `;
-const BurgerImg = styled.img``;
+// const BurgerImg = styled.img``;
 
 const HeaderTop = styled.header`
   display: flex;
@@ -108,6 +110,10 @@ const HeaderTop = styled.header`
   align-items: center;
   padding-top: 0px;
   margin-top: 70px;
+  @media all and (max-width: 640px){
+    justify-content: flex-end;
+  }
+  
 `;
 const LogoContainer = styled.h1`
   margin: 0;
@@ -127,6 +133,9 @@ const HeadUl = styled.ul`
   display: flex;
   padding: 0;
   width: 65%;
+  @media all and (max-width: 640px){
+    display: none;
+  }
 `;
 const HeadLi = styled.li`
     margin-right: 30px;
@@ -160,6 +169,9 @@ const IconUl = styled.ul`
   display: flex;
   
   list-style: none;
+  @media all and (max-width: 640px){
+    display: none;
+  }
 `;
 const IconLi= styled(Link)`
   width: 40px;

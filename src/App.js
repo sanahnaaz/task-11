@@ -3,12 +3,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Main from "./component/screen/Main";
 import React from "react";
 import Catering from "./component/screen/pages/Catering";
-import Profile from "./component/screen/Profile";
 import GuestTaffic from "./component/screen/pages/GuestTaffic";
 import Gifts from "./component/screen/pages/Gifts";
 import Account from "./component/screen/pages/Account";
 import Wallet from "./component/screen/pages/Wallet";
 import Help from "./component/screen/pages/Help";
+// import Pagenot from "./component/screen/pages/Pagenot";
+import GuestListPage from "./component/screen/pages/GuestListPage";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
           <Route path="/catering" element={<Catering />} />
         </Routes>
         <Routes>
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/profile" element={<GuestListPage />} />
         </Routes>
         <Routes>
           <Route path="/guestTaffic" element={<GuestTaffic />} />
@@ -41,6 +42,9 @@ function App() {
         <Routes>
           <Route path="/help" element={<Help />} />
         </Routes>
+        {/* <Routes>
+          <Route path="*" element={<Pagenot />} />
+        </Routes> */}
       </Router>
     </>
   );

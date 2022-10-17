@@ -16,8 +16,8 @@ const Navbar = () => {
       </Hamburger>
       <Menu isOpen={isOpen}>
         <MenuLink to="/" >Dashboard</MenuLink>
-        <MenuLink to="/graph" >Guest traffic</MenuLink>
-        <MenuLink to="/guestlist" >Guestlist</MenuLink>
+        <MenuLink to="/guestTaffic" >Guest traffic</MenuLink>
+        <MenuLink to="/profile" >Guestlist</MenuLink>
         <MenuLink href="">Contact</MenuLink>
       </Menu>
     </Nav>
@@ -43,7 +43,7 @@ const MenuLink = styled(Link)`
 
 const Nav = styled.div`
   padding-top: 85px;
-  padding-left: 50px;
+  padding-left: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
