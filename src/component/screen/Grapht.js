@@ -141,7 +141,7 @@ export default function Grapht() {
   );
 }
 
-
+// ahkshflkshf,
 
 const GraphContainer = styled.section`
     width: 56%;
