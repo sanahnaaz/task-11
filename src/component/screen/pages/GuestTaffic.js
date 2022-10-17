@@ -3,6 +3,7 @@ import Header from '../../include/Header'
 import Grapht from '../Grapht'
 import styled from 'styled-components'
 
+
 function GuestTaffic() {
   return (
     <>

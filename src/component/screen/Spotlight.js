@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Profile from './Profile'
 import Grapht from './Grapht';
 
+
 function Spotlight() {
     return (
         <>
