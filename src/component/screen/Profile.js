@@ -91,6 +91,8 @@ const ProfileContainer = styled.section`
         flex-wrap: wrap;
         width: 100%;
     }
+    /* ghjkl */
+
 
 
 `;
