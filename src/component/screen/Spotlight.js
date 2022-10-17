@@ -84,8 +84,7 @@ const BottomContainer = styled.section`
     }
     @media all and (max-width: 980px){
         flex-wrap: wrap;
-    }
-    
+    }  
 `;
 const SpotContainer = styled.section`
     background: #f5f1f1;
@@ -106,7 +105,6 @@ const TopContainer = styled.section`
     flex-wrap: wrap;
 }
 `;
-
 const DivOne = styled.div`
     background-color: #A5E3E3;
     width: 39%;
@@ -138,19 +136,16 @@ const MSpan = styled.span`
     width: 40px;
     background: #000;
     display: inline-block;
-
 `;
 const SpanIconImage = styled.img`
     display: block;
-    width: 100%;
-    
+    width: 100%; 
 `;
 const MH3 = styled.h3`
     font-size: 18px;
     font-weight: bold;
     margin-left: 10px;
     color: #000;
- 
 `;
 const MCount = styled.section`
     display: flex;
@@ -158,7 +153,6 @@ const MCount = styled.section`
 @media all and (max-width: 768px){
     justify-content: space-around;
 }
-
 `;
 const MLeft = styled.div`
 
@@ -294,7 +288,6 @@ const Seemore = styled.section`
 @media all and (max-width: 480px){
         flex-wrap: wrap;
 }
-
 `;
 const SeeRight = styled.div`
     display: flex;
@@ -307,8 +300,6 @@ const SeeRight = styled.div`
 @media all and (max-width: 480px){
     width: 50%;
 }
-
-  
 `;
 const SeeH5 = styled.h5`
     font-size: 18px;

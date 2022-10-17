@@ -99,9 +99,7 @@ const IconBurger = styled.span`
   @media all and (max-width: 640px){
     display: block;
   }
-
 `;
-
 const HeaderTop = styled.header`
   display: flex;
   justify-content: space-between;
@@ -113,12 +111,10 @@ const HeaderTop = styled.header`
   @media all and (max-width: 640px){
     justify-content: flex-end;
   }
-  
 `;
 const LogoContainer = styled.h1`
   margin: 0;
   display: contents;
-  
 `;
 const LogoImage = styled.img`
 @media all and (max-width: 768px){
@@ -145,9 +141,7 @@ const HeadLi = styled.li`
 }
 @media all and (max-width: 640px){
   display: none;
-
 }
-  
 `;
 const HeadA = styled(Link)`
     font-size: 17px;
@@ -192,7 +186,6 @@ const SideContainer = styled.section`
   @media all and (max-width: 768px){
     display: none;
   }
-
 `;
 const SideBar = styled.section`
   margin-top: 50px;
@@ -201,7 +194,6 @@ const MainMenu = styled.h4`
   color: #8D8989;
   margin-bottom: 20px;
   font-size: 15px;
-  
 `;
 const MenuUl = styled.ul`
   padding-left: 10px;
@@ -215,14 +207,11 @@ const MenuLi = styled.li`
   @media all and (max-width: 980px){
     font-size: 12px;
   }
-  
 `;
 const MenuIcon = styled.span`
   margin-right: 8px;
 `;
-const MenuImage = styled.img`
-
-`;
+const MenuImage = styled.img``;
 const MenuH5 = styled(Link)`
   margin: 0;
   &:hover{

@@ -173,7 +173,6 @@ const BarChartBox = styled.section`
     width: 100%;
     margin: 0 auto;
 `;
-
 const GraphHead = styled.section`
 	display: flex;
 	justify-content: space-between;
@@ -206,7 +205,6 @@ const Gh4 = styled.h4`
     @media all and (max-width: 768px){
       font-size: 10px;
     }
-
 `;
 const Mbox = styled.span`
     background-color: #A5E3E3;
@@ -215,7 +213,6 @@ const Mbox = styled.span`
     display: inline-block;
 	  margin-right: 5px;
 `;
-
 const Fbox = styled.span`
     background-color: #D2A2F7;
     border-radius: 5px;
@@ -223,7 +220,6 @@ const Fbox = styled.span`
     display: inline-block;
 	  margin-right: 5px;
 `;
-
 const Slide = styled.div`
   display: flex;
   width: 20px;

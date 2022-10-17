@@ -13,7 +13,6 @@ function Account() {
             </Icondiv>
             <H4>Aisyah Namanya</H4>
         </Container>
-        
     </>
   )
 }
