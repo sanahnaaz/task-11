@@ -100,7 +100,6 @@ const IconBurger = styled.span`
   }
 
 `;
-// const BurgerImg = styled.img``;
 
 const HeaderTop = styled.header`
   display: flex;
