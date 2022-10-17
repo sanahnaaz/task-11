@@ -8,7 +8,6 @@ import Gifts from "./component/screen/pages/Gifts";
 import Account from "./component/screen/pages/Account";
 import Wallet from "./component/screen/pages/Wallet";
 import Help from "./component/screen/pages/Help";
-// import Pagenot from "./component/screen/pages/Pagenot";
 import GuestListPage from "./component/screen/pages/GuestListPage";
 
 function App() {
