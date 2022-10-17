@@ -43,7 +43,7 @@ const MenuLink = styled(Link)`
 
 const Nav = styled.div`
   padding-top: 85px;
-  padding-left: 20px;
+  padding-left: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
